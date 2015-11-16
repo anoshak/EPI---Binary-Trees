@@ -21,26 +21,32 @@
 #include <stack>
 #include <queue>
 #include <sstream>
+#include <stdio.h>
+
+#define NULL   ((void *) 0)
 
 using namespace std;
 
 void print_vector(vector<int>& arr);
 void print_vector_matrix(vector<vector<int> >& arr);
-void swap (vector<int>& arr, int i, int j);
+void swap(vector<int>& arr, int i, int j);
 int stoi(string s);
 
-struct ListNode
-{
+struct ListNode {
 	int val;
 	ListNode* next;
-	ListNode(int x) : val(x), next(NULL) {};
+	ListNode(int x) :
+			val(x), next(NULL) {
+	}
+	;
 };
 
 struct TreeNode {
-	 int val;
-	 TreeNode *left;
-	 TreeNode *right;
-	 TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-	 };
-
+	int val;
+	TreeNode *left;
+	TreeNode *right;
+	TreeNode(int x) :
+			val(x), left(NULL), right(NULL) {
+	}
+};
 #endif /* COMMON_UTILS_H_ */
