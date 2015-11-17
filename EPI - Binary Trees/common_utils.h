@@ -22,6 +22,7 @@
 #include <queue>
 #include <sstream>
 #include <stdio.h>
+#include <unordered_map>
 
 #define NULL   ((void *) 0)
 
