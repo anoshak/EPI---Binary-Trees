@@ -11,7 +11,7 @@
 
 class Solution {
 private:
-    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder, unordered_map<int,int>& mymap, int ps, int pe, int is, int ie)
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder, map<int,int>& mymap, int ps, int pe, int is, int ie)
     {
         if(is>ie || ps > pe)
             return NULL;
@@ -26,7 +26,7 @@ public:
         if(preorder.size() == 0 || inorder.size()!=preorder.size())
             return NULL;
         //make hash map of inorder elements and index
-        unordered_map<int,int> mymap;
+        map<int,int> mymap;
         for(int i=0;i<inorder.size();i++)
         {
             mymap[inorder[i]] = i;
